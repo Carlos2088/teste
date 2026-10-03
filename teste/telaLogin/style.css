@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5e5;
+    height: 50px;
+    border-bottom: 2px solid #3498db;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Centraliza ligeiramente compensado pelo tamanho dos elementos */
+    transform: translateX(-50px); 
+}
+
+.logo-box {
+    background-color: #6a1a21;
+    color: white;
+    padding: 5px 15px;
+    font-size: 1.1rem;
+    border: 1px solid #3a0d11;
+}
+
+.brand-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-box {
+    background-color: #d9d9d9;
+    width: 100%;
+    max-width: 450px;
+    padding: 50px 40px;
+    /* O mockup mostra bordas retas no container cinza */
+}
+
+.input-group {
+    margin-bottom: 35px;
+}
+
+.input-group:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #000;
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    background-color: #b92b27;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 0 15px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+footer {
+    background-color: #d9d9d9;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #000;
+    border-top: 1px solid #c0c0c0;
+}
